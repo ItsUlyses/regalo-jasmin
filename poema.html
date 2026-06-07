@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oda mi pequeña jas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f4d0d8; /* Rosa suave */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Lora', serif; /* Letra principal muy legible */
+            overflow-x: hidden;
+        }
+
+        .pergamino-marco {
+            position: relative;
+            width: 90%;
+            max-width: 550px;
+            padding: 20px;
+        }
+
+        .pergamino {
+            position: relative;
+            background: #fdf5e6; /* Color papel antiguo claro */
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(255,255,255,0.4) 0%, transparent 100%),
+                url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            padding: 50px 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2), inset 0 0 60px rgba(139, 69, 19, 0.15);
+            border: 1px solid #d4a373;
+            border-radius: 4px;
+            text-align: center;
+            /* Bordes ligeramente irregulares */
+            clip-path: polygon(
+                0% 1%, 5% 0%, 95% 1%, 100% 0%, 
+                99% 30%, 100% 70%, 99% 98%, 95% 100%, 
+                5% 99%, 0% 100%, 1% 70%, 0% 30%
+            );
+        }
+
+        /* Ornamentos en las esquinas */
+        .pergamino::before {
+            content: "❧";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #8b4513;
+            font-size: 25px;
+            opacity: 0.5;
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            color: #582f0e;
+            font-size: 1.8rem;
+            margin: 0 0 25px 0;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #d4a373;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .poema-contenido {
+            color: #2c1e12; /* Color más oscuro para mayor legibilidad */
+            font-size: 1.25rem; /* Tamaño aumentado */
+            line-height: 1.7; /* Espaciado cómodo */
+            margin: 20px 0;
+            white-space: pre-line;
+            text-align: center;
+        }
+
+        /* Resaltamos las palabras especiales */
+        .resaltado {
+            font-weight: 700;
+            color: #a4161a;
+        }
+
+        .firma {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: #582f0e;
+            margin-top: 35px;
+            display: block;
+        }
+
+        .sello-cera {
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            width: 70px;
+            height: 70px;
+            background: #a4161a;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transform: rotate(-10deg);
+            z-index: 10;
+        }
+
+        .sello-cera::after {
+            content: "❤";
+            color: rgba(255,255,255,0.8);
+            font-size: 30px;
+        }
+
+        .btn-volver {
+            margin-top: 40px;
+            text-decoration: none;
+            color: #8b4513;
+            font-size: 0.9rem;
+            border: 1px solid #8b4513;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: 0.3s;
+            display: inline-block;
+            font-family: sans-serif;
+        }
+
+        .btn-volver:hover {
+            background: #8b4513;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pergamino-marco">
+        <div class="pergamino">
+            <h2>Mi reina hermosa</h2>
+            
+           <div class="poema-contenido">
+            
+            Mi amor, a veces me pongo a pensar
+            en todo lo que has significado para mí.
+            Desde que llegaste a mi vida,
+            te convertiste en una parte esencial de mi felicidad.
+            
+            Me encanta la tranquilidad que siento al hablar contigo,
+            la manera en que una simple conversación
+            puede alegrar mi día por completo.
+            Tu sonrisa tiene el poder de hacer que todo parezca más fácil.
+            
+            Quiero que sepas que no te valoro
+            solamente por los momentos bonitos que compartimos,
+            sino por la increíble persona que eres.
+            Por tu forma de pensar, por tu corazón
+            y por cada detalle que te hace única.
+            
+            No prometo ser perfecto,
+            pero sí prometo quererte con sinceridad,
+            cuidarte, apoyarte y estar contigo
+            tanto en los buenos momentos como en los difíciles.
+            
+            Gracias por cada sonrisa, cada mensaje,
+            cada recuerdo y cada instante compartido.
+            Espero que esta sea solo una pequeña parte
+            de todas las historias que aún nos quedan por vivir.
+            
+            Te quiero muchísimo, Jasmin.
+            Con todo mi corazón,
+            DE: Ulises ❤️
+        
+        </div>
+
+            <span class="firma">Con amor infinito, tu novio y futuro esposo</span>
+
+            <a href="index.html" class="btn-volver">←volver</a>
+        </div>
+        <div class="sello-cera"></div>
+    </div>
+
+</body>
+</html>
