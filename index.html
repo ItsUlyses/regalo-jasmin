@@ -362,7 +362,12 @@
             const n = document.createElement('div');
             n.className = 'nube';
             n.innerHTML = frases[Math.floor(Math.random() * frases.length)];
-            n.style.top = (Math.random() * 40 + 5) + 'vh';
+            const posiciones = [
+    Math.random() * 12 + 2,   // arriba
+    Math.random() * 12 + 70   // abajo
+];
+
+n.style.top = posiciones[Math.floor(Math.random() * posiciones.length)] + 'vh';
             const dur = Math.random() * 10 + 15;
             n.style.animationDuration = dur + 's';
             document.body.appendChild(n);
